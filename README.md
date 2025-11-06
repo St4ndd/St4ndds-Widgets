@@ -39,8 +39,10 @@ Screenshots coming soon !!
 
 ### Steps
 
-1. Clone the repository:
+1. Clone the repository: (The Source Code is coming soon, too !)
 
 ```bash
 git clone https://github.com/your-username/st4ndd-widgets.git
 cd st4ndd-widgets
+
+
