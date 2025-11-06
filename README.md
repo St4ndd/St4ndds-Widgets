@@ -26,7 +26,7 @@ Widgets can be customized, resized, repositioned, and styled according to your p
 
 ## Screenshots
 
-*Add screenshots of your widgets here for better presentation.*
+Screenshots coming soon !!
 
 ---
 
