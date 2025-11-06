@@ -1,0 +1,147 @@
+Alles klar! Ich erstelle ein **komplettes, gut strukturiertes Markdown-README** für dein GitHub-Repo zu deinem Widgets-Projekt. Es enthält: Projektbeschreibung, Features, Installation, Nutzung, Struktur und Hinweise zu Build/Icon.
+
+Hier ist der Vorschlag:
+
+---
+
+````markdown
+# St4ndd's Widgets
+
+Ein kleines Desktop-Widget-Projekt mit **Clock** und **Spotify**-Integration, gebaut mit **Electron**. Das Projekt erlaubt es, Widgets individuell zu positionieren, zu skalieren und das Design anzupassen.  
+
+---
+
+## Features
+
+- **Clock Widget**
+  - Digital, analog, minimal oder fancy Design
+  - Draggable & sizeable
+  - Live Uhrzeit-Update
+- **Spotify Widget**
+  - Anzeige aktueller Songs (über Spotify API)
+  - Draggable & sizeable
+- **Settings Widget**
+  - Einfache Steuerung für Clock und Spotify Widgets
+  - Auto-Start beim Systemstart
+  - Zurücksetzen von Tokens und Widget-Positionen
+- **Tray Integration**
+  - Schnellzugriff auf Settings
+  - Minimieren in Tray möglich
+
+---
+
+## Screenshots
+
+*Hier kannst du Bilder einfügen, z.B. von den Widgets.*
+
+---
+
+## Installation
+
+### Voraussetzungen
+
+- Node.js (>= 16)
+- npm
+
+### Schritte
+
+1. Repository klonen:
+
+```bash
+git clone https://github.com/dein-username/st4ndd-widgets.git
+cd st4ndd-widgets
+````
+
+2. Abhängigkeiten installieren:
+
+```bash
+npm install
+```
+
+3. Projekt starten (Entwicklung):
+
+```bash
+npm start
+```
+
+---
+
+## Build
+
+Um das Projekt für die Distribution zu bauen:
+
+```bash
+npm run build
+```
+
+**Hinweis zum Icon:**
+
+* Windows: `.ico`
+* macOS: `.icns`
+* Linux: `.png`
+
+Stelle sicher, dass das Icon im Projektordner liegt und in `package.json` korrekt angegeben ist:
+
+```json
+"build": {
+  "appId": "com.st4ndd.widgets",
+  "win": { "icon": "icon.ico" },
+  "mac": { "icon": "icon.icns" },
+  "linux": { "icon": "icon.png" },
+  "files": [
+    "dist/**/*",
+    "main.js",
+    "icon.*"
+  ]
+}
+```
+
+---
+
+## Projektstruktur
+
+```
+st4ndd-widgets/
+│
+├─ main.js             # Hauptprozess, Fenster & IPC
+├─ preload.js          # optional
+├─ settings.js         # Renderer Script für Settings Widget
+├─ clock.html          # Clock Widget HTML
+├─ settings.html       # Settings Widget HTML
+├─ icon.ico            # Windows Icon
+├─ tray_icon.ico       # Tray Icon
+├─ package.json
+└─ ...
+```
+
+---
+
+## Einstellungen & Widgets
+
+* **Clock Widget**: Styles (`digital`, `analog`, `minimal`, `fancy`) & draggable/sizeable über Settings.
+* **Spotify Widget**: Draggable & sizeable. Token-Verwaltung über Settings.
+* **Settings Widget**: Alle Optionen zentral zugänglich, inkl. Auto-Start.
+
+---
+
+## Hinweise
+
+* Electron-IPC wird für die Kommunikation zwischen Settings und Widgets genutzt.
+* Clock Styles werden live angepasst.
+* Analoge Uhr nutzt `<canvas>` für echte Zeiger-Darstellung.
+
+---
+
+## Lizenz
+
+Dieses Projekt ist **MIT-lizenziert**.
+
+---
+
+```
+
+---
+
+Wenn du willst, kann ich noch eine **Version mit fertigen GIFs und animierten Beispielen der Widgets** machen, die direkt in GitHub angezeigt werden.  
+Willst du, dass ich das mache?
+```
